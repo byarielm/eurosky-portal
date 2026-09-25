@@ -36,7 +36,7 @@ const nl = {
   'apps.rating': '{value} van de 5',
   'apps.subheading': 'Bekijk de aanbevolen apps die werken met je {appBrand} account.',
   'beta.giveFeedback': 'Feedback geven',
-  'beta.warning': 'Eurosky Portal is momenteel in bèta. <feedback>Feedback geven</feedback>.',
+  'beta.warning': '{appTitle} is momenteel in bèta. <feedback>Feedback geven</feedback>.',
   'common.breadcrumb': 'Kruimelpad',
   'common.learnMore': 'Meer informatie',
   'common.someone': 'iemand',
@@ -102,12 +102,11 @@ const nl = {
   'nav.openNavigation': 'Navigatie openen',
   'nav.privacy': 'Privacy',
   'nav.signIn': 'Inloggen',
-  'onboarding.alternative':
-    'Je kunt ook <logout>Uitloggen</logout> en Eurosky Portal niet gebruiken.',
+  'onboarding.alternative': 'Je kunt ook <logout>Uitloggen</logout> en {appTitle} niet gebruiken.',
   'onboarding.notice.bothUpdated': 'Onze Gebruiksvoorwaarden en Privacybeleid zijn bijgewerkt',
   'onboarding.notice.privacyUpdated': 'Ons Privacybeleid is bijgewerkt',
   'onboarding.notice.termsUpdated': 'Onze Gebruiksvoorwaarden zijn bijgewerkt',
-  'onboarding.notice.text': 'Accepteer de wijzigingen om Eurosky Portal te blijven gebruiken',
+  'onboarding.notice.text': 'Accepteer de wijzigingen om {appTitle} te blijven gebruiken',
   'onboarding.pageTitle': 'Voorwaarden accepteren',
   'onboarding.title': 'Welkom bij <brand>{appBrand}</brand>.',
   'policy.accept':

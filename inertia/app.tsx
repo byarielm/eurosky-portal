@@ -8,13 +8,12 @@ import { createInertiaApp, ResolvedComponent } from '@inertiajs/react'
 import { TuyauProvider } from '@adonisjs/inertia/react'
 import { resolvePageComponent } from '@adonisjs/inertia/helpers'
 import { I18nProvider } from '~/lib/i18n'
+import { portal } from '#shared/portal'
 
 import.meta.glob(['../resources/images/og-image.png', './images/**'])
 
-const appName = import.meta.env.VITE_APP_NAME || 'Eurosky Portal'
-
 createInertiaApp({
-  title: (title) => (title ? `${title} - ${appName}` : appName),
+  title: (title) => (title ? `${title} - ${portal.title}` : portal.title),
   resolve: (name) => {
     return resolvePageComponent(
       `./pages/${name}.tsx`,

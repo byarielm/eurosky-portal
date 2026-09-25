@@ -113,6 +113,7 @@ export default class OAuthController {
           result.value,
           i18n.t('oauth.unsupportedAccount', {
             appBrand: portal.brandName,
+            appTitle: portal.title,
           })
         )
       }
@@ -480,6 +481,7 @@ function checkAuthInput(
         value,
         i18n.t('oauth.unsupportedAccount', {
           appBrand: portal.brandName,
+          appTitle: portal.title,
         })
       )
     }
@@ -507,6 +509,7 @@ function checkAuthInput(
         value,
         i18n.t('oauth.unsupportedAccount', {
           appBrand: portal.brandName,
+          appTitle: portal.title,
         })
       )
     }

@@ -36,7 +36,7 @@ const en = {
   'apps.rating': '{value} out of 5',
   'apps.subheading': 'Browse featured apps that work with your {appBrand} account.',
   'beta.giveFeedback': 'Give feedback',
-  'beta.warning': 'Eurosky Portal is currently in beta. <feedback>Give feedback</feedback>.',
+  'beta.warning': '{appTitle} is currently in beta. <feedback>Give feedback</feedback>.',
   'common.breadcrumb': 'Breadcrumb',
   'common.learnMore': 'Learn more',
   'common.someone': 'someone',
@@ -103,11 +103,11 @@ const en = {
   'nav.privacy': 'Privacy',
   'nav.signIn': 'Sign in',
   'onboarding.alternative':
-    'Alternatively, you can <logout>Logout</logout> and not use Eurosky Portal.',
+    'Alternatively, you can <logout>Logout</logout> and not use {appTitle}.',
   'onboarding.notice.bothUpdated': 'Our Terms of service and Privacy policy have been updated',
   'onboarding.notice.privacyUpdated': 'Our Privacy policy has been updated',
   'onboarding.notice.termsUpdated': 'Our Terms of service has been updated',
-  'onboarding.notice.text': 'Please accept the changes to continue using Eurosky Portal',
+  'onboarding.notice.text': 'Please accept the changes to continue using {appTitle}',
   'onboarding.pageTitle': 'Accept terms & conditions',
   'onboarding.title': 'Welcome to <brand>{appBrand}</brand>.',
   'policy.accept':

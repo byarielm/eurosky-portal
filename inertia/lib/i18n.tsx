@@ -218,6 +218,7 @@ function createT(locale: Locale, messages: Record<string, string> | undefined) {
       format.format({
         ...defaults,
         appBrand: portal.brandName,
+        appTitle: portal.title,
         ...variables,
       })
     )
@@ -246,6 +247,7 @@ function createT(locale: Locale, messages: Record<string, string> | undefined) {
     const { format } = message
     const values: Record<string, VariableValue<ReactNode>> = {
       appBrand: portal.brandName,
+      appTitle: portal.title,
       ...variables,
     }
     const result = format.format(values)
