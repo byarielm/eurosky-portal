@@ -6,11 +6,11 @@ import ReactDOMServer from 'react-dom/server'
 import { createInertiaApp, ResolvedComponent } from '@inertiajs/react'
 import { TuyauProvider } from '@adonisjs/inertia/react'
 import { resolvePageComponent } from '@adonisjs/inertia/helpers'
-import { portal } from '#shared/portal'
+import { brand } from '#shared/brand'
 
 export default function render(page: any) {
   return createInertiaApp({
-    title: (title) => (title ? `${title} - ${portal.title}` : portal.title),
+    title: (title) => (title ? `${title} - ${brand.appTitle}` : brand.appTitle),
     page,
     render: ReactDOMServer.renderToString,
     resolve: (name) => {

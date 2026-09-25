@@ -22,7 +22,7 @@ import { SlingshotService } from '#services/slingshot_service'
 import { loginRequestValidator, signupRequestValidator } from '#validators/oauth'
 import { createFieldError } from '#utils/errors'
 import { getHandleDomain } from '#utils/oauth'
-import { portal } from '#shared/portal'
+import { brand } from '#shared/brand'
 
 const oauthServerUrl = env.get('OAUTH_SERVICE')
 const allowExternalLogins = env.get('ALLOW_EXTERNAL_LOGINS', false)
@@ -112,8 +112,8 @@ export default class OAuthController {
           'input',
           result.value,
           i18n.t('oauth.unsupportedAccount', {
-            appBrand: portal.brandName,
-            appTitle: portal.title,
+            appBrand: brand.name,
+            appTitle: brand.appTitle,
           })
         )
       }
@@ -480,8 +480,8 @@ function checkAuthInput(
         'input',
         value,
         i18n.t('oauth.unsupportedAccount', {
-          appBrand: portal.brandName,
-          appTitle: portal.title,
+          appBrand: brand.name,
+          appTitle: brand.appTitle,
         })
       )
     }
@@ -508,8 +508,8 @@ function checkAuthInput(
         'input',
         value,
         i18n.t('oauth.unsupportedAccount', {
-          appBrand: portal.brandName,
-          appTitle: portal.title,
+          appBrand: brand.name,
+          appTitle: brand.appTitle,
         })
       )
     }

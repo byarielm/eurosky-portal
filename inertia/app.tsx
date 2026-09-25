@@ -8,12 +8,12 @@ import { createInertiaApp, ResolvedComponent } from '@inertiajs/react'
 import { TuyauProvider } from '@adonisjs/inertia/react'
 import { resolvePageComponent } from '@adonisjs/inertia/helpers'
 import { I18nProvider } from '~/lib/i18n'
-import { portal } from '#shared/portal'
+import { brand } from '#shared/brand'
 
 import.meta.glob(['../resources/images/og-image.png', './images/**'])
 
 createInertiaApp({
-  title: (title) => (title ? `${title} - ${portal.title}` : portal.title),
+  title: (title) => (title ? `${title} - ${brand.appTitle}` : brand.appTitle),
   resolve: (name) => {
     return resolvePageComponent(
       `./pages/${name}.tsx`,

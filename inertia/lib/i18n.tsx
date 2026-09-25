@@ -18,7 +18,7 @@ import {
   useSyncExternalStore,
 } from 'react'
 import type { Locale } from '#shared/locale'
-import { portal } from '#shared/portal'
+import { brand } from '#shared/brand'
 import { parse, serverSnapshot, setLocale, snapshot, subscribe } from '~/utils/locale'
 
 type VariableValue<T> = FormatXMLElementFn<T> | PrimitiveType | T
@@ -217,8 +217,8 @@ function createT(locale: Locale, messages: Record<string, string> | undefined) {
     return String(
       format.format({
         ...defaults,
-        appBrand: portal.brandName,
-        appTitle: portal.title,
+        appBrand: brand.name,
+        appTitle: brand.appTitle,
         ...variables,
       })
     )
@@ -246,8 +246,8 @@ function createT(locale: Locale, messages: Record<string, string> | undefined) {
     if (!message) return
     const { format } = message
     const values: Record<string, VariableValue<ReactNode>> = {
-      appBrand: portal.brandName,
-      appTitle: portal.title,
+      appBrand: brand.name,
+      appTitle: brand.appTitle,
       ...variables,
     }
     const result = format.format(values)
