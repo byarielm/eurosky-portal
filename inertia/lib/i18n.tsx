@@ -217,8 +217,8 @@ function createT(locale: Locale, messages: Record<string, string> | undefined) {
     return String(
       format.format({
         ...defaults,
-        appBrand: brand.name,
-        appTitle: brand.appTitle,
+        appName: brand.orgName,
+        appTitle: brand.productTitle,
         ...variables,
       })
     )
@@ -246,8 +246,8 @@ function createT(locale: Locale, messages: Record<string, string> | undefined) {
     if (!message) return
     const { format } = message
     const values: Record<string, VariableValue<ReactNode>> = {
-      appBrand: brand.name,
-      appTitle: brand.appTitle,
+      appName: brand.orgName,
+      appTitle: brand.productTitle,
       ...variables,
     }
     const result = format.format(values)

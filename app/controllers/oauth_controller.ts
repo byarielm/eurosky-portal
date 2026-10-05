@@ -112,8 +112,8 @@ export default class OAuthController {
           'input',
           result.value,
           i18n.t('oauth.unsupportedAccount', {
-            appBrand: brand.name,
-            appTitle: brand.appTitle,
+            appName: brand.orgName,
+            appTitle: brand.productTitle,
           })
         )
       }
@@ -480,8 +480,8 @@ function checkAuthInput(
         'input',
         value,
         i18n.t('oauth.unsupportedAccount', {
-          appBrand: brand.name,
-          appTitle: brand.appTitle,
+          appName: brand.orgName,
+          appTitle: brand.productTitle,
         })
       )
     }
@@ -508,8 +508,8 @@ function checkAuthInput(
         'input',
         value,
         i18n.t('oauth.unsupportedAccount', {
-          appBrand: brand.name,
-          appTitle: brand.appTitle,
+          appName: brand.orgName,
+          appTitle: brand.productTitle,
         })
       )
     }

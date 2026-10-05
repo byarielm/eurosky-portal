@@ -7,4 +7,4 @@ edge.use(edgeMarkdown, {})
 
 edge.global('opengraph_url', toAbsoluteUrl)
 edge.global('service_domain', appHost)
-edge.global('app_title', brand.appTitle)
+edge.global('app_title', brand.productTitle)

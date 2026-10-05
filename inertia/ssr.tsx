@@ -10,7 +10,7 @@ import { brand } from '#shared/brand'
 
 export default function render(page: any) {
   return createInertiaApp({
-    title: (title) => (title ? `${title} - ${brand.appTitle}` : brand.appTitle),
+    title: (title) => (title ? `${title} - ${brand.productTitle}` : brand.productTitle),
     page,
     render: ReactDOMServer.renderToString,
     resolve: (name) => {

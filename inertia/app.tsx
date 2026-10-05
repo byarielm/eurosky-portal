@@ -13,7 +13,7 @@ import { brand } from '#shared/brand'
 import.meta.glob(['../resources/images/og-image.png', './images/**'])
 
 createInertiaApp({
-  title: (title) => (title ? `${title} - ${brand.appTitle}` : brand.appTitle),
+  title: (title) => (title ? `${title} - ${brand.productTitle}` : brand.productTitle),
   resolve: (name) => {
     return resolvePageComponent(
       `./pages/${name}.tsx`,
